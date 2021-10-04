@@ -27,8 +27,8 @@ public class ObjectHit : MonoBehaviour
     {
         if (other.gameObject.tag == Tags.PLAYER_TAG)
         {
-            //Debug.Log(gameObject.name + " was hit!");
             _meshRenderer.material.color = Color.black;
+            gameObject.tag = Tags.OBJECT_HIT_TAG;
         }
     }
 }

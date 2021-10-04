@@ -20,7 +20,11 @@ public class Score : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        _score++;
-        Debug.Log("You've bumped into things this many times: " + _score);
+        if (other.gameObject.tag != Tags.OBJECT_HIT_TAG)
+        {
+            _score++;
+            Debug.Log("You've bumped into things this many times: " + _score);
+        }
+        
     }
 }
