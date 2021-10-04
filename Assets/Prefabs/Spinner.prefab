@@ -122,5 +122,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _xRotation: 0
-  _yRotation: 2
+  _yRotation: 0.5
   _zRotation: 0
